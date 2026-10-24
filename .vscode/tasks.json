@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "copy profile and build",
+			"type": "shell",
+			"command": "cmd /c \"if not exist \"D:\\Sakshi-portfolio\\public\\images\" mkdir \"D:\\Sakshi-portfolio\\public\\images\" & copy /Y \"C:\\Users\\VN\\Downloads\\sakshi.jpg\" \"D:\\Sakshi-portfolio\\public\\images\\profile.jpg\" & cd /d \"D:\\Sakshi-portfolio\" & npm run build\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "build portfolio",
+			"type": "shell",
+			"command": "npm run build",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
